@@ -18,6 +18,7 @@
 /* Styles for the HTML Body element */
 
 body {
+  background-color:#1d3557ff;
   /* Add a background colour of #1d3557ff */
 }
 
@@ -25,21 +26,32 @@ body {
 /* Then move onto the header styles */
 
 header {
+  color:#f1faeeff;
+  margin: 1rem;
+  padding: 2rem;
   /* Set the text colour, margins and padding */
 }
 
 header .site-title {
+  font-size: medium;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
   /* Add some cool text styles to the site title */
   /* Experiment with the font-size, font-weight, text-transform, letter-spacing */
 }
 
 header nav {
+  margin: 2rem;
   /* Experiment with margin until you find spacing
    * that you like
   */
 }
 
 header nav ul {
+  list-style: none;
+  margin:0;
+  padding:0;
   /* Remove the list styles */
   /* Experiment with list-style property
    * to see what it does and how to remove
@@ -49,11 +61,14 @@ header nav ul {
 }
 
 header a {
+  color:#a8dadcff;
+  text-decoration: none;
   /* Set the text colour and remove the underline */
   /* Make the links white (or any cool colour */
 }
 
 header a:hover {
+  text-decoration: underline;
   /* Add an underline to the links when you hover over them */
 }
 
@@ -69,8 +84,15 @@ header a:hover {
  *   <section>...</section>
  * </main>
  */
+main {
+  margin: 1rem;
+  padding: 2rem;
+}
 
 main > section {
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
   /* Set the margins, padding and background colour */
   /* Set the border radius to give it rounded corners */
 }
@@ -84,18 +106,31 @@ main > section:last-child {
 
 /* Now let's setup the Hero section in main styles */
 main section.hero {
+  padding: 2rem;
+  background-color: rgb(100, 145, 146);
+  border-radius: 3rem;
   /* Start by setting the padding */
   /* Set the background colour */
   /* Set the border radius to give it rounded corners */
 }
 
 main section.hero h1 {
+  font-size: 2rem;
+  margin: 1rem;
+  color:#BBC2E2;
+  letter-spacing: 1.5rem;
+  text-align: center;
   /* Set the font size, margins and text colour */
   /* Experiment with letter-spacing to see what it does */
   /* Google how to align text in the center */
 }
 
 main section.hero .secondary-heading {
+  font-size: 1.3rem;
+  margin:2rem;
+  color:#90F3FF;
+  letter-spacing: none;
+  text-align: center;
   /* Set the font size, margins and text colour */
   /* Experiment with letter-spacing to see what it does */
   /* Google how to align text in the center */
@@ -117,10 +152,16 @@ main section.hero img {
 /* Next up is the second section, which is our menu styles */
 
 main section.menu {
+  padding: 20rem;
+  background-color: #90BEDE;
+  border-radius: 50rem 30rem 50rem 70rem;
   /* Set the padding, background colour and border radius */
 }
 
 main section.menu ul {
+  list-style: none;
+  margin:0;
+  padding:0;
   /* Remove the list styles */
   /* Experiment with list-style property
    * to see what it does and how to remove
@@ -130,8 +171,12 @@ main section.menu ul {
 }
 
 main section.menu ul li {
+  padding: 3rem;
+  margin-top: 3rem;
+  border-radius: 4rem;
   /* Set the padding, margin-top and border radius */
   /* Set the background colour */
+  background-color: #DFFDFF;
 }
 
 /* Use psuedo classes nth-child(even)
@@ -142,13 +187,19 @@ main section.menu ul li {
  * background-color: #a8dadcff;
  */
 
-
+main section.menu ul li:nth-child(even) {
+  background-color: #a8dadcff;
+  color: #E5E1EE;
+}
 
 /* TESTIMONIAL SECTION STYLES */
 
 /* Almost done! The last section is our testimonial styles */
 
 main section.testimonials {
+  padding:10rem;
+  background-color:#f1faeeff;
+  border-radius: 1rem;
   /* Set the padding and background colour #f1faeeff */
   /* Set the border radius */
 }
@@ -164,9 +215,18 @@ main section.testimonials {
 
 */
 
+main section.testimonials h2 {
+  text-align:center;
+  font-size: 2rem;
+  font-weight: bolder;
+  color:#6F73D2;
+}
+
 main section.testimonials img {
   width: 100%;
   max-width: 100%;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
   /* Put a border radius on just the top of the image */
 }
 
@@ -185,7 +245,16 @@ main section.testimonials img {
   - Put a border radius on just the bottom of the blockquote
 
 */
-
+main section.testimonials blockquote {
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+  padding:2rem;
+  background-color: #457b9dff;
+  color: #D9F0FF;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
 /* AND THAT'S IT! YOU ARE DONE. CONGRATULATIONS. POST YOUR LINK! */
 
 
